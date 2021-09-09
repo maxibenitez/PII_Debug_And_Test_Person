@@ -56,5 +56,46 @@ namespace UnitTestAndDebug
 
             return true;
         }
+
+        public static bool BirthdayIsValid(string birthday)
+        {
+            // Validar largo
+            if (birthday.Length == 10)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        /*
+        public static bool BirthdayIsValid(string birthday)
+        {
+            long tempOut;
+
+            // Quitar diagonales
+            birthday = birthday.Replace("/", "");
+
+            // Obtener día
+            day = birthday
+
+            // Obtener mes
+            month = birthday
+
+            // Obtener año
+            year = birthday
+
+            // Validar
+            if (day > 0 && day < 32 && month > 0 && month < 13 && year > 1200)
+            {
+               return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        */
     }
 }
